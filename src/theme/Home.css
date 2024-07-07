@@ -47,7 +47,11 @@
   font-weight: bold;
 }
 
-ion-content{
+.home-page{
+    --background: linear-gradient(135deg, #8175ff 0%, #fe738f 100%) no-repeat;
+}
+
+/* ion-content{
     --background: linear-gradient(135deg, #8175ff 0%, #fe738f 100%) no-repeat;
     --color: #fff;
-}
+} */

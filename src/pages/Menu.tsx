@@ -57,7 +57,7 @@ const Menu: React.FC = () => {
               </IonMenuToggle>
             ))}
             <IonMenuToggle autoHide={false} className="ion-padding">
-              <IonButton expand="full" routerLink="/" routerDirection="root">
+              <IonButton expand="block" routerLink="/" routerDirection="root">
                 <IonIcon slot="start" icon={logOutOutline} />
                 Logout
               </IonButton>

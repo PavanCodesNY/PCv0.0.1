@@ -14,7 +14,7 @@ import { arrowForwardCircleOutline, arrowForwardOutline } from "ionicons/icons";
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonContent scrollY={false} className="ion-padding">
+      <IonContent scrollY={false} className="ion-padding home-page">
         <IonGrid className="ion-padding center-content">
           <IonRow className="ion-justify-content-center">
             <IonCol>

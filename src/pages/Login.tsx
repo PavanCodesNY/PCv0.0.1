@@ -9,6 +9,7 @@ import {
   IonHeader,
   IonIcon,
   IonInput,
+  IonLoading,
   IonPage,
   IonRow,
   IonTitle,
@@ -21,12 +22,15 @@ import { closeSharp, logInOutline, personCircleOutline } from "ionicons/icons";
 import PC from "../assets/pc.png";
 import Intro from "../components/Intro";
 import { Preferences } from "@capacitor/preferences";
+import "../theme/Login.css";
 
 const INTRO_KEY = "intro-seen";
 const Login: React.FC = () => {
   const router = useIonRouter();
-  const [introSeen, setIntroSeen] = useState(true);
-  const [present, dismiss] = useIonLoading();
+
+  const [introSeen, setIntroSeen] = useState(true); // sets the intro page to seen or not
+
+  const [present, dismiss] = useIonLoading(); // This is the logging in animation
 
   useEffect(() => {
     const checkStorage = async () => {
@@ -39,8 +43,7 @@ const Login: React.FC = () => {
 
   const doLogin = async (e: any) => {
     e.preventDefault();
-    console.log("Register");
-    await present("Logging in...");
+    // await present("Logging in...", undefined, "crescent");
     setTimeout(() => {
       dismiss();
       router.push("/app", "root");
@@ -106,11 +109,18 @@ const Login: React.FC = () => {
                           type="submit"
                           expand="block"
                           color="primary"
+                          id="open-loading"
                         >
                           {" "}
                           Login{" "}
                           <IonIcon icon={logInOutline} slot="end"></IonIcon>
                         </IonButton>
+                        <IonLoading
+                          className="custom-loading"
+                          trigger="open-loading"
+                          message="Logging in..."
+                          duration={undefined}
+                        />
 
                         <IonButton
                           routerLink="/register"

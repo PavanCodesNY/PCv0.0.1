@@ -15,11 +15,11 @@ const List: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar color={"success"}>
+        <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>List</IonTitle>
+          <IonTitle>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">UI goes here...</IonContent>
