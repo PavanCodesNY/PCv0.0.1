@@ -1,0 +1,6 @@
+def capacitorAppProjectPath = '../node_modules/@capacitor/app/android'
+def capacitorAppProject = project(path: ':capacitor-app', configuration: 'default')
+
+dependencies {
+    implementation capacitorAppProject
+}
