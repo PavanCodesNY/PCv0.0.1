@@ -19,9 +19,15 @@ const Home: React.FC = () => {
           <IonRow className="ion-justify-content-center">
             <IonCol>
               <IonText className="poppins-medium">Pocket Counselor</IonText>
-              <IonButton routerLink ="/login" size="small" expand="block" fill = "clear" color="dark">
+              <IonButton
+                routerLink="/login"
+                size="small"
+                expand="block"
+                fill="clear"
+                color="dark"
+              >
                 Continue{}
-                <IonIcon icon = {arrowForwardCircleOutline}></IonIcon>
+                <IonIcon icon={arrowForwardCircleOutline}></IonIcon>
               </IonButton>
             </IonCol>
           </IonRow>
@@ -32,4 +38,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-

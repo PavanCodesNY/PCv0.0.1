@@ -52,6 +52,24 @@ const Register: React.FC = () => {
                   <form onSubmit={doRegister}>
                     <IonInput
                       fill="outline"
+                      label="First Name"
+                      type="text"
+                      labelPlacement="floating"
+                      placeholder="Pavan"
+                    ></IonInput>
+
+                    <IonInput
+                      className=""
+                      fill="outline"
+                      label="Last Name"
+                      type="text"
+                      labelPlacement="floating"
+                      placeholder="Kumar"
+                    ></IonInput>
+
+                    <IonInput
+                      className=""
+                      fill="outline"
                       label="Email"
                       type="email"
                       labelPlacement="floating"
@@ -59,7 +77,7 @@ const Register: React.FC = () => {
                     ></IonInput>
 
                     <IonInput
-                      className="ion-margin-top"
+                      className=""
                       fill="outline"
                       label="Password"
                       type="password"
@@ -68,7 +86,7 @@ const Register: React.FC = () => {
                     ></IonInput>
 
                     <IonInput
-                      className="ion-margin-top"
+                      className="ion-margin-bottom"
                       fill="outline"
                       label="Confirm Password"
                       type="password"
